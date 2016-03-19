@@ -5,11 +5,11 @@ def rgb(r, g, b):
 		r = 0
 	if g > 255:
 		g =255
-	elif g < 0:
+	if g < 0:
 		g = 0
-	elif b >255:
+	if b >255:
 		b = 255
-	elif b < 0:
+	if b < 0:
 		b = 0
 	hexr = hex(r).split('x')[1].upper()
 	if len(hexr) == 1:
